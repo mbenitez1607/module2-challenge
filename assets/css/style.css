@@ -1,0 +1,134 @@
+/* Stylesheet for the portfolio website ../../index.html */
+
+/* Variable declarations*/
+:root {
+    --background_color: #cdc5be;
+    --header_color: #604f3a;
+    --light_font_color: #d3b481;
+    --dark_font_color: #502d16;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main background color for the document */
+body {
+    background-color: var(--background_color);
+}
+
+/* Styling for the 'header' class */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--header_color);
+    color: var(--light_font_color);
+    text-align: justify;
+}
+
+.header img{
+    display: inline;
+    max-height: 100px;
+}
+/* Styling for H1 headers inside the 'header' class */
+.header h1 {
+    display: inline;
+    font-size: 48px;
+}
+
+/* Styling for the menu items on the 'header' class */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: var(--header_color);
+    display: inline;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Styling for the main image (Digital Marketing Meeting) */
+.opensource {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/opensource.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the document's text (p - paragraphs) */
+main p {
+    font-size: 16px;
+    color: var(--dark_font_color);
+}
+
+/* Styling for the 'content' class */
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    padding: 10px;
+}
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--dark_font_color);
+}
+
+/* Styling for the 'projects' sub-classes */
+.projects {
+    display: flex;
+    flex-wrap: wrap;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--dark_font_color);
+}
+#about_menu {
+    border-right: 10px, solid, var(--header_color);
+}
+.about, .projects, .contact {
+    flex: 1 0 0;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .project {
+    margin: 5px;
+    border: solid;
+  }
+  .project h3 {
+    padding: 5px;
+    text-align: justify;
+  }
+ 
+/* Styling for images inside the 'project' sub-classes */
+.projects img {
+    max-height: 200px;
+}
+
+.contact div {
+    display: block;
+    justify-items:center;
+}
+/* Styling for the footer */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: var(--header_color);
+    color: var(--light_font_color);
+}

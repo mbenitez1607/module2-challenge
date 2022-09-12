@@ -8,50 +8,67 @@
     <title>mbenitez1607's portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="./assets/images/avatar.jpg" alt="Purple starfish"/>
         <h1>Martha Benitez</h1>
-        <nav>
+         <nav>
             <ul>
                 <li>
-                    <a href="#about">About Me</a>
+                    <a href="#about_menu">About Me</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects_menu">Projects</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact Information</a>
+                    <a href="#contact_menu">Contact Information</a>
                 </li>
             </ul>        
         </nav>
     </header>
     <figure class="opensource" role="img" aria-label="Open Source"></figure>
-    <main>
-        <section id="about">
+    <main class="content">
+        <section id="about_menu">
             <h2>About Me</h2>
+        </section>
+        <section class="about">
             <p>Hello! My name is Martha and I am working on a web development 
                 portfolio for the UofT Web Development Bootcamp.
             </p>
-            <p>I will add projects to this sit as I work on them.</p>
+            <p>I will add projects to this site as I work on them.</p>
         </section>
-        <section id="projects">
+        <section id="projects_menu">
             <h2>Projects</h2>
-            <h3>Prework: Study Guide</h3>
-            <img src="./assets/images/prework.jpg" alt="Image of a study guide"/>
-            <h3>Module 1 Challenge: Basic HTML and CSS</h3>
-            <img src="./assets/images/html.jpg" alt="Image that says HTML"/>
-            <h3>Module 2 Challenge: Advanced CSS</h3>
-            <img src="./assets/images/css.jpg" alt="Image showing basic CSS code"/>
         </section>
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <a href="mailto:mbenitez.a@gmail.com">mbenitez.a@gmail.com</a>
-            <a href="https://linkedin.com/in/mbenitez">LinkedIn</a>
-            <a href="https://github.com/mbenitez1607">GitHub</a>
+        <section class="projects">
+            <section class="project" id="prework">
+                <img src="./assets/images/prework.jpg" alt="Image of a study guide"/>
+                <h3>Prework: Study Guide</h3>
+            </section>
+            <section class="project" id="basic_html">
+                <img src="./assets/images/html.jpg" alt="Image that says HTML"/>
+                <h3>Module 1 Challenge: HTML & CSS</h3>
+            </section>
+            <section class="project" id="advanced_css">
+                <img src="./assets/images/css.jpg" alt="Image showing basic CSS code"/>
+                <h3>Module 2 Challenge: Advanced CSS</h3>
+            </section>
         </section>
-
+        <section id="contact_menu">
+            <h2>Contact me</h2>
+        </section>
+        <section class="contact">
+            <div>
+                <a href="mailto:mbenitez.a@gmail.com">mbenitez.a@gmail.com</a>
+            </div>
+            <div>
+                <a href="https://linkedin.com/in/mbenitez">LinkedIn</a>
+            </div>
+            <div>
+                <a href="https://github.com/mbenitez1607">GitHub</a>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
             <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
